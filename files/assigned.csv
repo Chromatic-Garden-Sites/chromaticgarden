@@ -1,0 +1,26 @@
+Netblock,Country,Region code,City,User,Use case
+23.133.248.0/28,AU,AU-NSW,Sydney,Aubrey,Webservers
+23.133.248.16/28,CA,CA-ON,Toronto,Moki,Roaming VPN subnet
+23.133.248.32/27,AU,AU-NSW,Sydney,Aubrey,VPS subnet 1
+23.133.248.64/26,AU,AU-NSW,Sydney,Aubrey,VPS subnet 2
+23.133.248.128/25,AU,AU-NSW,Sydney,Aubrey,VPS subnet 3
+23.133.248.50/31,JP,JP-27,Osaka,Aubrey,Japan Roaming 1
+23.133.249.0/25,US,US-HI,Hanalei,Aubrey,Aub home subnet HNL
+23.133.249.128/25,CA,CA-ON,Toronto,Moki,Moki home subnet ONT
+23.133.250.0/24,AU,AU-VIC,Melbourne,Aubrey,Home subnet 1 MEL
+23.133.251.0/24,AU,AU-VIC,Melbourne,Aubrey,Home subnet 2 MEL
+23.133.252.0/24,AU,AU-VIC,Melbourne,Aubrey,Home subnet 3 MEL
+23.133.253.0/24,AU,AU-VIC,Melbourne,Aubrey,Home subnet 4 MEL
+23.133.254.0/24,AU,AU-VIC,Melbourne,Aubrey,Home subnet 5 MEL
+23.133.255.0/24,AU,AU-VIC,Melbourne,Aubrey,Home subnet 6 MEL
+2602:fba2::/32,AU,AU-VIC,Melbourne,N/A,Global catch all v6
+2602:fba2:e2ad::/48,CA,CA-ON,Toronto,Moki,Moki roaming v6 VPN
+2602:fba2:2112::/48,CA,CA-ON,Toronto,Aubrey,Anya Hypervisor 01
+2602:fba2:1100:1100::/64,CA,CA-ON,Toronto,Moki,Moki router transit block
+2602:fba2:aaaa::/48,US,US-HI,Hanalei,Aubrey,Aub home subnet v6 NHL
+2606:c740::/32,AU,AU-VIC,Melbourne,N/A,Global catch all v6
+2602:fba2:eaa1::/48,CA,CA-ON,Toronto,Unk,Not assigned
+2602:fba2:d000::/48,CA,CA-BC,Vancouver,N/A,Vancouver VM placeholder
+2602:fafd:faf::/48,AU,AU-QLD,Gold Coast,Aubrey,Meme subnet
+2a06:9f80::/30,AU,AU-QLD,Gold Coast,Aubrey,Bigblock 1 placeholder
+2a06:9f84::/30,AU,AU-QLD,Gold Coast,Aubrey,Bigblock 2 placeholder
