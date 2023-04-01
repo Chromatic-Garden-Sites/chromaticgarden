@@ -180,11 +180,11 @@ details summary:first-of-type {
 
 details summary:after {
     margin-left: 10px;
-    content: "▶";
+    content: "▷";
 }
 
 details[open] summary:after {
-    content: "▼";
+    content: "▽";
 }
 
 summary {
