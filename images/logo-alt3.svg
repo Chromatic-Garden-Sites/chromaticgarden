@@ -132,7 +132,7 @@
         </g>
     </g>
     <circle id="Petal_Overlay" data-name="Petal Overlay" fill="url(#radial-gradient-2)" cx="1281" cy="1330" r="1205" />
-    <g>
+    <g mask="url(#mask)">
         <g id="Stamen">
             <g id="Short_Stamen" data-name="Short Stamen">
                 <path fill="url(#linear-gradient)" d="M1121.56,1524.41l161.64-191.7-6.42-5.42-161.73,191.82a40.6,40.6,0,1,0,6.51,5.3Z" />
