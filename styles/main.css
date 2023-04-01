@@ -49,15 +49,19 @@ header {
     position: sticky;
     top: 0;
     display: grid;
-    grid-template-columns: max-content auto;
-    justify-content: space-between;
-    /* grid-column-gap: ; */
+    grid-template-columns: min-content 1fr auto;
     align-items: center;
     background-color: #6c5b85;
 }
 
+header .logo {
+    /* height: 100%; */
+    height: 40px;
+    margin: 0 10px;
+}
+
 header h1 {
-    margin: 10px 20px;
+    margin: 10px;
 }
 
 header h1 a {
@@ -67,7 +71,7 @@ header h1 a {
 
 header input[type=checkbox] {
     display: none;
-} 
+}
 
 header .hamburger {
     display: none;
@@ -76,6 +80,10 @@ header .hamburger {
     cursor: pointer;
     padding: 12px 20px;
     display: none;
+}
+
+header .hamburger:after {
+    content: "☰";
 }
 
 header nav {
@@ -92,9 +100,13 @@ header nav a:hover {
     background-color: #4c405e;
 }
 
-@media (max-width: 768px) {
+header nav a.active {
+    background-color: #4c405e;
+}
+
+@media (max-width: 824px) {
     header {
-        grid-template-columns: auto min-content;
+        grid-template-columns: min-content 1fr min-content;
     }
 
     header nav {
@@ -102,7 +114,7 @@ header nav a:hover {
         background-color: #5b4d6e;
         text-align: center;
         padding: 16px;
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 3;
     }
     
     header input[type=checkbox]:checked ~ nav {
@@ -115,6 +127,10 @@ header nav a:hover {
     
     header .hamburger {
         display: inline-block;
+    }
+
+    header input[type=checkbox]:checked ~ .hamburger:after {
+        content: "✖";
     }
 }
 
