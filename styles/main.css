@@ -48,7 +48,10 @@ header, content, footer {
 header {
     position: sticky;
     top: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content auto;
+    justify-content: space-between;
+    /* grid-column-gap: ; */
     align-items: center;
     background-color: #6c5b85;
 }
@@ -62,64 +65,57 @@ header h1 a {
     text-decoration: none;
 }
 
-/* header nav {
-    display: flex;
-    flex-direction: row;
-}
-
-header nav a {
-    display: inline-block;
-} */
-
-.nav-links input[type=checkbox] {
+header input[type=checkbox] {
     display: none;
 } 
 
-.nav-links .hamburger {
+header .hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
     cursor: pointer;
-    margin: auto 20px;
-    /* height: 100%; */
-    /* align-self: ; */
+    padding: 12px 20px;
+    display: none;
+}
+
+header nav {
+    padding: 0 10px;
+}
+
+header nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+header nav a:hover {
+    background-color: #4c405e;
 }
 
 @media (max-width: 768px) {
-    nav { 
+    header {
+        grid-template-columns: auto min-content;
+    }
+
+    header nav {
         display: none;
-        position: absolute;
         background-color: #5b4d6e;
-        left: 0;
-        right: 0;
-        /* top: 55px; */
         text-align: center;
-        padding: 16px 0;
-        margin-top: 0px;
+        padding: 16px;
+        grid-column: 1 / span 2;
     }
     
-    nav > *:hover {
+    header input[type=checkbox]:checked ~ nav {
         display: inline-block;
-        /* background-color:#4c9e9e; */
-        transition: 0.3s ease;
+    }
+
+    header input[type=checkbox]:checked ~ nav a {
+        display: inline-block;
     }
     
-    /* nav > * + * {
-        margin-top: 12px;
-    } */
-    
-    .nav-links input[type=checkbox]:checked ~ nav {
-        display: block;
+    header .hamburger {
+        display: inline-block;
     }
-    
-    .nav-links .hamburger {
-        display: block;
-    }
-    
-    /* .dropdown li:hover {
-        background-color: #4c9e9e;
-    } */
-    
 }
 
 content {
