@@ -202,3 +202,8 @@ footer {
 footer p {
     margin: 5px 10px;
 }
+
+h3 img {
+    height: 24px;
+    margin-left: 10px;
+}
