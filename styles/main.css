@@ -194,6 +194,9 @@ summary {
 footer {
     text-align: center;
     background-color: #3c3c3c;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer p {
